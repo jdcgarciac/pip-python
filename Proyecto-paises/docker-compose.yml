@@ -3,6 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    #Enlaza los contenedores de manera automatica
     volumes:
       - .:/app
     ports:
