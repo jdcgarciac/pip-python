@@ -7,4 +7,4 @@ RUN pip install --no-cache-dir --upgrade -r /Proyecto-paises/requirements.txt
 
 COPY . /Proyecto-paises
 
-CMD bash -c "whilw true; do sleep 1; done"
+CMD bash -c "while true; do sleep 1; done"
