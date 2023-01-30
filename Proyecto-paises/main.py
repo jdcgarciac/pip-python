@@ -13,6 +13,7 @@ def run():
   countries = df["Country"].values
   #Obtener porcentajes de la poblacion
   percentages = df["World Population Percentage"].values
+  #Funciones para graficar
   generate_bar_chart(countries, countries)
   generate_pie_chart(countries, percentages)
 
