@@ -5,6 +5,6 @@ services:
       dockerfile: Dockerfile
     #Enlaza los contenedores de manera automatica
     volumes:
-      - .:/app
+      - .:/Proyecto-paises
     ports:
      - '80:80'
