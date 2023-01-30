@@ -1,6 +1,0 @@
-services:
-  web-server:
-  #Construitruie servivio desde la carpeta donde se encuentra el archivo docker
-    build:
-      context: .
-      dockerfile: Dockerfile
