@@ -7,7 +7,7 @@ def generate_bar_chart(labels, values):
   fig, ax = plt.subplots()
   ax.bar(labels, values)
   #Guarda una imagen en formato png en la carpeta graficas
-  plt.savefig('Proyecto-paises/barras.png')
+  plt.savefig('barras.png')
   #Cierra el archivo
   plt.close()
   
@@ -17,6 +17,6 @@ def generate_pie_chart(labels, values):
   ax.pie(values, labels=labels)
   ax.axis('equal')
   #Guarda una imagen en formato png en la carpeta graficas
-  plt.savefig('Proyecto-paises/circulo.png')
+  plt.savefig('circulo.png')
   #Cierra el archivo
   plt.close()
