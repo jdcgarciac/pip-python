@@ -1,4 +1,4 @@
-FROM python:3.10
+FROM python:3.11
 
 WORKDIR /Proyecto-paises
 COPY requirements.txt /Proyecto-paises/requirements.txt
