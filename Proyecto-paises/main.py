@@ -1,14 +1,19 @@
 from excel import *
 from utils import *
 from charts import *
+import pandas as pd
 
 
 def run():
-  data = read_csv('./Proyecto-paises/data.csv') #Ubicacion carpeta archivo
-  data = list(filter(lambda item : item['Continent'] == 'South America',data))
-
-  countries = list(map(lambda x: x['Country'], data))
-  percentages = list(map(lambda x: x['World Population Percentage'], data))
+  #leer csv con pandas
+  df = pd.read_csv('data.csv')
+  #Generar filtros
+  df = df[df["Continent"] == 'Africa']
+  #Obtener valores de paises
+  countries = df["Country"].values
+  #Obtener porcentajes de la poblacion
+  percentages = df["World Population Percentage"].values
+  generate_bar_chart(countries, countries)
   generate_pie_chart(countries, percentages)
 
 if __name__ == '__main__':
